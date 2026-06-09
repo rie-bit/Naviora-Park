@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naviora Park – Journey Through Pandora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+============================================================ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <img 
+    src="./img/app.jpeg" 
+    class="nav-logo-icon" 
+    alt="Naviora Park Logo"
+    style="width:38px;height:38px;object-fit:cover;"
+    >
+    <div class="nav-brand">
+      Naviora Park
+      <span>Journey Through Pandora</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#realms">Realm &amp; Wahana</a></li>
+    <li><a href="#fasilitas">Fasilitas</a></li>
+    <li><a href="#lokasi">Lokasi</a></li>
+    <li><a href="#tiket" class="nav-cta">Beli Tiket</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#tentang">Tentang</a>
+  <a href="#realms">Realm &amp; Wahana</a>
+  <a href="#fasilitas">Fasilitas</a>
+  <a href="#lokasi">Lokasi</a>
+  <a href="#tiket">Beli Tiket</a>
+</div>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-scan"></div>
+
+  <svg class="hero-crystals" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="cryBlue" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#64b5f6" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#1565c0" stop-opacity="0.5"/>
+      </linearGradient>
+      <linearGradient id="cryPurp" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ce93d8" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#6a1b9a" stop-opacity="0.5"/>
+      </linearGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="4" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <path d="M0,320 L0,280 Q360,240 720,260 Q1080,280 1440,250 L1440,320Z" fill="#050d1a"/>
+    <g filter="url(#glow)">
+      <polygon points="50,320 80,180 110,320"   fill="url(#cryBlue)" opacity="0.7"/>
+      <polygon points="30,320 65,220 100,320"   fill="url(#cryPurp)" opacity="0.5"/>
+      <polygon points="100,320 130,200 160,320" fill="url(#cryBlue)" opacity="0.6"/>
+      <polygon points="140,320 170,240 200,320" fill="url(#cryPurp)" opacity="0.65"/>
+      <polygon points="1280,320 1310,190 1340,320" fill="url(#cryBlue)" opacity="0.7"/>
+      <polygon points="1320,320 1355,210 1390,320" fill="url(#cryPurp)" opacity="0.6"/>
+      <polygon points="1350,320 1380,230 1410,320" fill="url(#cryBlue)" opacity="0.5"/>
+      <polygon points="1390,320 1415,250 1440,320" fill="url(#cryPurp)" opacity="0.55"/>
+      <polygon points="650,320 670,280 690,320"  fill="url(#cryBlue)" opacity="0.4"/>
+      <polygon points="760,320 785,270 810,320"  fill="url(#cryPurp)" opacity="0.4"/>
+      <circle cx="80"   cy="180" r="5" fill="#00e5ff" opacity="0.8"/>
+      <circle cx="130"  cy="200" r="4" fill="#ce93d8" opacity="0.8"/>
+      <circle cx="1310" cy="190" r="5" fill="#00e5ff" opacity="0.8"/>
+      <circle cx="1355" cy="210" r="4" fill="#ce93d8" opacity="0.8"/>
+    </g>
+  </svg>
+
+  <div class="particles-layer" id="particles"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge"><span style="color:var(--cyan-bright)">◆</span> Avatar Theme Park Indonesia</div>
+    <h1 class="hero-title">NAVIORA<br>PARK</h1>
+    <p class="hero-subtitle">Journey Through Pandora</p>
+    <p class="hero-desc">
+      Sebuah theme park imersif bertema dunia Pandora, planet fiksi yang dipenuhi hutan bioluminescent bercahaya,
+      pegunungan terapung yang megah, serta ekosistem eksotis yang hidup harmonis.
+      Hadir pertama kali di Indonesia, berlokasi di Kulon Progo, Yogyakarta.
+    </p>
+    <div class="hero-ctas">
+      <a href="#tiket" class="btn-glow">Pesan Tiket Sekarang</a>
+      <a href="#realms" class="btn-ghost">Jelajahi Realm</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ============================================================
+     INFO BANNER
+============================================================ -->
+<div class="info-banner">
+  <div class="info-item">🕐 <strong>10:00 – 20:00 WIB</strong> Setiap Hari</div>
+  <div class="info-dot">|</div>
+  <div class="info-item">📍 <strong>Kulon Progo</strong>, DIY</div>
+  <div class="info-dot">|</div>
+  <div class="info-item">🌳 <strong>26 Hektar</strong> Kawasan Pandora</div>
+  <div class="info-dot">|</div>
+  <div class="info-item">✈️ <strong>15 menit</strong> dari Bandara YIA</div>
+</div>
+
+<!-- ============================================================
+     TENTANG
+============================================================ -->
+<section id="tentang" class="tentang-section">
+  <div class="tentang-inner">
+    <div class="tentang-text reveal">
+      <div class="eyebrow">Tentang Naviora Park</div>
+      <h2 class="section-title">Masuki Dunia <em>Pandora</em></h2>
+      <p class="body-text">
+        Naviora Park adalah taman hiburan tematik seluas 26 hektar yang menggabungkan keindahan alam Kulon Progo
+        dengan semesta Avatar. Theme park ini mengangkat dunia fiksi Pandora, sebuah planet imajinatif yang dipenuhi
+        hutan bioluminescent bercahaya, pegunungan terapung yang megah, sungai alami mengalir, dan makhluk eksotis
+        yang hidup harmonis dalam ekosistem yang saling terhubung.
+      </p>
+      <p class="body-text" style="margin-top:1rem">
+        Seluruh konsep taman dirancang untuk menghadirkan pengalaman seolah pengunjung benar-benar memasuki dunia
+        lain yang penuh keajaiban alam. Melalui suasana visual imersif, teknologi modern, dan wahana petualangan
+        kelas dunia, Naviora Park hadir sebagai destinasi wisata tematik pertama di Indonesia dengan skala internasional.
+      </p>
+      <div class="stats-row">
+        <div class="stat-pill stat-cyan">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Realm Utama</div>
+        </div>
+        <div class="stat-pill stat-violet">
+          <div class="stat-num">12+</div>
+          <div class="stat-label">Wahana &amp; Atraksi</div>
+        </div>
+        <div class="stat-pill stat-gold">
+          <div class="stat-num">26 Ha</div>
+          <div class="stat-label">Luas Kawasan</div>
+        </div>
+        <div class="stat-pill stat-cyan">
+          <div class="stat-num">200</div>
+          <div class="stat-label">Kapasitas Restoran</div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     KAWASAN BAR
+============================================================ -->
+<div class="kawasan-bar">
+  <div class="kawasan-item">
+    <div class="kwsn-icon">🌿</div>
+    <div class="kwsn-info">
+      <div class="kwsn-name">Forest Realm</div>
+      <div class="kwsn-area">10 Hektar</div>
+    </div>
+  </div>
+  <div class="kwsn-sep"></div>
+  <div class="kawasan-item">
+    <div class="kwsn-icon">🌊</div>
+    <div class="kwsn-info">
+      <div class="kwsn-name">Ocean Realm</div>
+      <div class="kwsn-area">8 Hektar</div>
+    </div>
+  </div>
+  <div class="kwsn-sep"></div>
+  <div class="kawasan-item">
+    <div class="kwsn-icon">🔥</div>
+    <div class="kwsn-info">
+      <div class="kwsn-name">Fire Ash Realm</div>
+      <div class="kwsn-area">6 Hektar</div>
+    </div>
+  </div>
+  <div class="kwsn-sep"></div>
+  <div class="kawasan-item">
+    <div class="kwsn-icon">🏛️</div>
+    <div class="kwsn-info">
+      <div class="kwsn-name">Plaza &amp; Fasilitas</div>
+      <div class="kwsn-area">2 Hektar</div>
+    </div>
+  </div>
+  <div class="kwsn-sep"></div>
+  <div class="kawasan-item kwsn-total">
+    <div class="kwsn-icon">📐</div>
+    <div class="kwsn-info">
+      <div class="kwsn-name">Total</div>
+      <div class="kwsn-area kwsn-total-area">26 Hektar</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     REALMS & WAHANA
+============================================================ -->
+<section id="realms" class="realms-section">
+  <div class="section-header reveal">
+    <div class="eyebrow">Realm &amp; Wahana</div>
+    <h2 class="section-title">Tiga Dunia Pandora Menantimu</h2>
+    <p class="section-sub">Setiap realm terinspirasi langsung dari trilogi film Avatar dan menghadirkan pengalaman unik yang tak terlupakan.</p>
+  </div>
+
+  <!-- Tab Navigation -->
+  <div class="realm-tabs-nav reveal">
+    <button class="realm-tab active" data-realm="forest">
+      <span class="rtab-icon">🌿</span>
+      <span>Forest Realm</span>
+    </button>
+    <button class="realm-tab" data-realm="ocean">
+      <span class="rtab-icon">🌊</span>
+      <span>Ocean Realm</span>
+    </button>
+    <button class="realm-tab" data-realm="fire">
+      <span class="rtab-icon">🔥</span>
+      <span>Fire Ash Realm</span>
+    </button>
+  </div>
+
+  <!-- FOREST REALM PANEL -->
+  <div class="realm-panel active" id="realm-forest">
+    <div class="realm-hero-banner forest-banner">
+      <div class="realm-banner-overlay"></div>
+      <div class="realm-banner-content">
+        <div class="realm-badge forest-badge">Terinspirasi Avatar (2009)</div>
+        <h3 class="realm-title">Forest Realm</h3>
+        <p class="realm-tagline">Hutan Pandora yang Bercahaya di Malam Hari</p>
+      </div>
+    </div>
+    <div class="realm-body">
+      <div class="realm-desc reveal">
+        <p class="body-text">Masuki hutan Pandora yang hidup dan bercahaya. Forest Realm menghadirkan suasana hutan
+        bioluminescent dengan pohon-pohon raksasa, tanaman yang berpendar di malam hari, dan atmosfer mistis alam
+        Pandora dari film Avatar pertama. Area seluas 10 hektar ini adalah pintu gerbang utama petualanganmu di Naviora Park.</p>
+      </div>
+      <div class="wahana-grid">
+        <div class="wahana-card reveal">
+          <div class="wahana-num forest-num">01</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Simulator Terbang</div>
+            <h4 class="wahana-name">Flight of the Banshee</h4>
+            <p class="wahana-desc">Simulator terbang yang menghadirkan sensasi menunggangi Ikran di atas hutan Pandora. Rasakan hembusan angin dan pemandangan 360 derajat yang memukau.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Semua Usia</span>
+              <span class="wtag">Simulator</span>
+            </div>
+          </div>
+        </div>
+        <div class="wahana-card reveal">
+          <div class="wahana-num forest-num">02</div>
+          <div class="wahana-content">
+            <div class="wahana-type">River Ride</div>
+            <h4 class="wahana-name">Bioluminescent River Journey</h4>
+            <p class="wahana-desc">Perjalanan menyusuri sungai bercahaya di tengah hutan Pandora. Nikmati panorama tanaman berpendar dan kehidupan liar Pandora dari atas perahu.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Semua Usia</span>
+              <span class="wtag">Tenang</span>
+            </div>
+          </div>
+        </div>
+        <div class="wahana-card reveal">
+          <div class="wahana-num forest-num">03</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Pertunjukan Multimedia</div>
+            <h4 class="wahana-name">Tree of Souls Experience</h4>
+            <p class="wahana-desc">Pertunjukan multimedia dan interaktif di bawah Pohon Jiwa Pandora. Teknologi proyeksi imersif menciptakan koneksi spiritual dengan alam Pandora.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Interaktif</span>
+              <span class="wtag">Semua Usia</span>
+            </div>
+          </div>
+        </div>
+        <div class="wahana-card reveal">
+          <div class="wahana-num forest-num">04</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Canopy Adventure</div>
+            <h4 class="wahana-name">Na'vi Canopy Adventure</h4>
+            <p class="wahana-desc">Jembatan gantung dan jalur petualangan di atas hutan Pandora. Rasakan pengalaman berjalan seperti Na'vi di antara kanopi pohon raksasa yang berpendar.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Petualangan</span>
+              <span class="wtag">Outdoor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="realm-fac reveal">
+        <h5 class="realm-fac-title">Fasilitas di Forest Realm</h5>
+        <div class="realm-fac-list">
+          <span class="rfac-item">🛋️ Rest Area</span>
+          <span class="rfac-item">🍽️ Food Court</span>
+          <span class="rfac-item">🛍️ Souvenir Shop</span>
+          <span class="rfac-item">🚻 Toilet &amp; Mushola</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OCEAN REALM PANEL -->
+  <div class="realm-panel" id="realm-ocean">
+    <div class="realm-hero-banner ocean-banner">
+      <div class="realm-banner-overlay"></div>
+      <div class="realm-banner-content">
+        <div class="realm-badge ocean-badge">Terinspirasi Avatar: The Way of Water</div>
+        <h3 class="realm-title">Ocean Realm</h3>
+        <p class="realm-tagline">Kedalaman Lautan Pandora yang Menakjubkan</p>
+      </div>
+    </div>
+    <div class="realm-body">
+      <div class="realm-desc reveal">
+        <p class="body-text">Selami keindahan lautan Pandora yang terinspirasi dari Avatar: The Way of Water.
+        Ocean Realm menghadirkan sensasi dunia bawah laut yang penuh warna, makhluk laut Pandora, dan teknologi
+        air spektakuler di area seluas 8 hektar.</p>
+      </div>
+      <div class="wahana-grid">
+        <div class="wahana-card reveal">
+          <div class="wahana-num ocean-num">01</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Water Coaster</div>
+            <h4 class="wahana-name">Ilu Water Coaster</h4>
+            <p class="wahana-desc">Water coaster bertema makhluk laut Pandora bernama Ilu. Meluncur di atas jalur air yang berliku dengan semburan air yang menyegarkan.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Basah</span>
+              <span class="wtag">Seru</span>
+            </div>
+          </div>
+        </div>
+        <div class="wahana-card reveal">
+          <div class="wahana-num ocean-num">02</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Kolam Bermain</div>
+            <h4 class="wahana-name">Metkayina Lagoon</h4>
+            <p class="wahana-desc">Kolam bermain air bertema tematik dan area bermain keluarga yang terinspirasi dari kehidupan suku Metkayina di lautan Pandora.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Keluarga</span>
+              <span class="wtag">Anak</span>
+            </div>
+          </div>
+        </div>
+        <div class="wahana-card reveal">
+          <div class="wahana-num ocean-num">03</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Dark Ride</div>
+            <h4 class="wahana-name">Tulkun Ocean Journey</h4>
+            <p class="wahana-desc">Dark ride menjelajahi lautan Pandora bersama Tulkun, makhluk laut raksasa yang bijaksana. Sistem proyeksi bawah air yang memukau.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Imersif</span>
+              <span class="wtag">Semua Usia</span>
+            </div>
+          </div>
+        </div>
+        <div class="wahana-card reveal">
+          <div class="wahana-num ocean-num">04</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Edukasi Bawah Laut</div>
+            <h4 class="wahana-name">Reef Explorer</h4>
+            <p class="wahana-desc">Petualangan edukatif bawah laut yang memperkenalkan ekosistem terumbu karang Pandora. Cocok untuk keluarga dan wisatawan yang ingin belajar sambil bermain.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Edukatif</span>
+              <span class="wtag">Keluarga</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="realm-fac reveal">
+        <h5 class="realm-fac-title">Fasilitas di Ocean Realm</h5>
+        <div class="realm-fac-list">
+          <span class="rfac-item">🔒 Water Locker</span>
+          <span class="rfac-item">🦞 Restoran Seafood</span>
+          <span class="rfac-item">🏄 Viewing Deck</span>
+          <span class="rfac-item">👨‍👩‍👧 Family Area</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIRE ASH REALM PANEL -->
+  <div class="realm-panel" id="realm-fire">
+    <div class="realm-hero-banner fire-banner">
+      <div class="realm-banner-overlay"></div>
+      <div class="realm-banner-content">
+        <div class="realm-badge fire-badge">Terinspirasi Avatar: Fire and Ash</div>
+        <h3 class="realm-title">Fire Ash Realm</h3>
+        <p class="realm-tagline">Api dan Abu Kawasan Vulkanik Pandora</p>
+      </div>
+    </div>
+    <div class="realm-body">
+      <div class="realm-desc reveal">
+        <p class="body-text">Masuki kawasan vulkanik Pandora yang dramatis dan penuh adrenalin. Fire Ash Realm
+        terinspirasi dari Avatar: Fire and Ash, menghadirkan lanskap lava yang menakjubkan, gua api yang panas,
+        dan pertunjukan spektakuler di area seluas 6 hektar.</p>
+      </div>
+      <div class="wahana-grid">
+        <div class="wahana-card reveal">
+          <div class="wahana-num fire-num">01</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Roller Coaster</div>
+            <h4 class="wahana-name">Ash Rider Coaster</h4>
+            <p class="wahana-desc">Roller coaster berkecepatan tinggi yang melintasi kawasan vulkanik Pandora. Rasakan panas dan adrenalin saat melaju di antara semburan api dan abu.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Tinggi</span>
+              <span class="wtag">Dewasa</span>
+            </div>
+          </div>
+        </div>
+        <div class="wahana-card reveal">
+          <div class="wahana-num fire-num">02</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Eksplorasi Gua</div>
+            <h4 class="wahana-name">Ember Cave Expedition</h4>
+            <p class="wahana-desc">Eksplorasi gua lava interaktif yang penuh efek visual dan suara dramatis. Temukan rahasia tersembunyi di dalam perut bumi Pandora yang membara.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Interaktif</span>
+              <span class="wtag">Petualangan</span>
+            </div>
+          </div>
+        </div>
+        <div class="wahana-card reveal">
+          <div class="wahana-num fire-num">03</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Arena Tantangan</div>
+            <h4 class="wahana-name">Fire Clan Challenge</h4>
+            <p class="wahana-desc">Arena tantangan keluarga bergaya suku api Pandora. Uji keberanian dan kerja sama tim dalam berbagai rintangan yang terinspirasi dari tradisi prajurit api.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Keluarga</span>
+              <span class="wtag">Tim</span>
+            </div>
+          </div>
+        </div>
+        <div class="wahana-card reveal">
+          <div class="wahana-num fire-num">04</div>
+          <div class="wahana-content">
+            <div class="wahana-type">Pertunjukan Malam</div>
+            <h4 class="wahana-name">Volcano Spectacular Show</h4>
+            <p class="wahana-desc">Pertunjukan malam spektakuler dengan efek api nyata, cahaya dramatis, dan narasi epik tentang legenda gunung berapi Pandora. Atraksi utama Fire Ash Realm.</p>
+            <div class="wahana-tags">
+              <span class="wtag">Pertunjukan</span>
+              <span class="wtag">Malam</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="realm-fac reveal">
+        <h5 class="realm-fac-title">Fasilitas di Fire Ash Realm</h5>
+        <div class="realm-fac-list">
+          <span class="rfac-item">🍽️ Food Court</span>
+          <span class="rfac-item">🛍️ Merchandise Store</span>
+          <span class="rfac-item">🚻 Toilet &amp; Mushola</span>
+          <span class="rfac-item">➕ First Aid</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FASILITAS
+============================================================ -->
+<section id="fasilitas" class="facilities-section">
+  <div class="section-header reveal">
+    <div class="eyebrow">Fasilitas &amp; Layanan</div>
+    <h2 class="section-title">Kenyamanan di Setiap Sudut</h2>
+    <p class="section-sub">Naviora Park dirancang untuk memastikan setiap pengunjung menikmati pengalaman yang nyaman, aman, dan menyenangkan.</p>
+  </div>
+
+  <div class="fac-grid">
+    <!-- Featured Card -->
+    <div class="fac-card featured reveal">
+      <div class="fac-illus" style="padding:0;overflow:hidden;">
+        <img src="./img/resto.jpeg" alt="Pandora Kitchen Restaurant"
+             style="width:100%;height:180px;object-fit:cover;display:block;"/>
+      </div>
+      <div class="fac-body">
+        <div class="fac-tag">Dining Experience</div>
+        <div class="fac-name">Pandora Kitchen</div>
+        <div class="fac-sub">Restoran Utama Naviora Park</div>
+        <p class="fac-desc">Restoran utama Naviora Park dengan kapasitas 200 pengunjung. Menyajikan menu khas Indonesia
+        dan internasional dalam suasana hutan Pandora yang imersif dengan pemandangan air terjun buatan sebagai
+        latar belakang.</p>
+        <ul class="fac-features">
+          <li>Kapasitas 200 pengunjung termasuk ruang makan privat dan teras pemandangan alam</li>
+          <li>Menu Indonesia dan internasional terinspirasi dari kuliner alam Pandora</li>
+          <li>Dekorasi imersif dengan efek cahaya bioluminescent dan suasana hutan</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ACE Store -->
+    <div class="fac-card reveal">
+      <div class="fac-illus" style="padding:0;overflow:hidden;">
+        <img src="./img/merch.jpeg" alt="ACE Merchandise Store"
+             style="width:100%;height:180px;object-fit:cover;display:block;"/>
+      </div>
+      <div class="fac-body">
+        <div class="fac-tag">Merchandise Store</div>
+        <div class="fac-name">ACE Store</div>
+        <div class="fac-sub">Avatar Collection &amp; Exclusives</div>
+        <p class="fac-desc">Koleksi eksklusif merchandise Avatar dengan interior toko menyerupai pasar tradisional Na'vi.
+        Hadirkan kenangan Pandora ke rumahmu.</p>
+        <ul class="fac-features">
+          <li>Apparel, aksesori, mainan, dan koleksi edisi terbatas</li>
+          <li>Produk resmi kualitas premium dan ramah lingkungan</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Naviora App -->
+    <div class="fac-card reveal">
+      <div class="fac-illus" style="background: linear-gradient(135deg, #0a1a30 0%, #0d3060 100%);
+           display:flex; align-items:center; justify-content:center; min-height:180px; font-size:4rem;">📱</div>
+      <div class="fac-body">
+        <div class="fac-tag">Digital Infrastructure</div>
+        <div class="fac-name">Naviora App</div>
+        <div class="fac-sub">Smart Park Experience</div>
+        <p class="fac-desc">Aplikasi resmi Naviora Park untuk navigasi, estimasi antrean real-time, booking wahana,
+        smart ticketing cashless, dan crowd control system.</p>
+        <ul class="fac-features">
+          <li>Peta interaktif dan estimasi antrean wahana</li>
+          <li>Smart ticketing cashless tap to enter</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Other Facilities -->
+    <div class="fac-card reveal" style="grid-column: 1 / -1;">
+      <div class="other-fac-grid">
+        <div class="ofac-item">
+          <div class="ofac-icon">🏥</div>
+          <div class="ofac-name">First Aid Center</div>
+          <div class="ofac-desc">Klinik kesehatan beroperasi sepanjang jam buka park</div>
+        </div>
+        <div class="ofac-item">
+          <div class="ofac-icon">🚌</div>
+          <div class="ofac-name">Shuttle Bus</div>
+          <div class="ofac-desc">Layanan shuttle dari kota Yogyakarta dan Bandara YIA</div>
+        </div>
+        <div class="ofac-item">
+          <div class="ofac-icon">🅿️</div>
+          <div class="ofac-name">Parkir Luas</div>
+          <div class="ofac-desc">Area parkir luas dengan kapasitas ratusan kendaraan</div>
+        </div>
+        <div class="ofac-item">
+          <div class="ofac-icon">🕌</div>
+          <div class="ofac-name">Mushola</div>
+          <div class="ofac-desc">Tersedia di tiap realm untuk kenyamanan pengunjung</div>
+        </div>
+        <div class="ofac-item">
+          <div class="ofac-icon">🎒</div>
+          <div class="ofac-name">Locker</div>
+          <div class="ofac-desc">Sistem penitipan barang di setiap zona wahana</div>
+        </div>
+        <div class="ofac-item">
+          <div class="ofac-icon">♿</div>
+          <div class="ofac-name">Akses Difabel</div>
+          <div class="ofac-desc">Fasilitas ramah disabilitas di seluruh area park</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOKASI
+============================================================ -->
+<section id="lokasi" class="location-section">
+  <div class="loc-inner">
+    <div class="reveal">
+      <div class="eyebrow">Lokasi &amp; Aksesibilitas</div>
+      <h2 class="loc-title">Kulon Progo, Yogyakarta</h2>
+      <p class="loc-sub">📍 Kawasan Perbukitan Menoreh, Daerah Istimewa Yogyakarta</p>
+      <p class="loc-desc">
+        Naviora Park terletak di kawasan perbukitan Menoreh yang dikelilingi hutan hijau dan dekat dengan pantai
+        selatan. Lokasi strategis yang mudah dijangkau dari berbagai kota besar menjadikan Naviora Park sebagai
+        destinasi wisata keluarga yang ideal untuk semua kalangan.
+      </p>
+      <div class="access-grid">
+        <div class="access-item">
+          <strong>✈️ Bandara YIA</strong>
+          15 menit dari bandara internasional
+        </div>
+        <div class="access-item">
+          <strong>🚗 Kota Yogyakarta</strong>
+          30 menit dari pusat kota
+        </div>
+        <div class="access-item">
+          <strong>🏛️ Candi Borobudur</strong>
+          45 menit dari kawasan Borobudur
+        </div>
+        <div class="access-item">
+          <strong>🏖️ Pantai Selatan</strong>
+          20 menit dari pantai Glagah
+        </div>
+      </div>
+      <div style="margin-top:2rem;">
+        <p style="font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:0.7rem;font-weight:600;">Akses Tersedia</p>
+        <div class="access-tags">
+          <span class="atag">🛣️ Jalan Nasional</span>
+          <span class="atag">🛤️ Akses Tol</span>
+          <span class="atag">🚌 Shuttle Bus</span>
+          <span class="atag">🅿️ Parkir Luas</span>
+        </div>
+      </div>
+    </div>
+    <div class="map-visual reveal">
+      <img src="./img/lokasi.jpeg" alt="Lokasi Naviora Park - Kulon Progo DIY"
+           style="width:50%;display:block;border-radius:6px;"/>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TIKET
+============================================================ -->
+<section id="tiket" class="ticket-section">
+  <div class="reveal">
+    <div class="eyebrow">Mulai Petualangan Anda</div>
+    <h2 class="ticket-title">Pesan Tiket Naviora Park</h2>
+    <p class="ticket-sub">Masuki dunia Pandora dan rasakan pengalaman yang tak terlupakan bersama keluarga, sahabat, dan orang-orang tercinta.</p>
+  </div>
+
+  <div class="ticket-grid reveal">
+    <!-- Standard -->
+    <div class="ticket-card">
+      <div class="ticket-realm-icon">🌿</div>
+      <div class="ticket-type">Pandora Standard</div>
+      <div class="ticket-price">Rp 200.000</div>
+      <div class="ticket-note">Akses seluruh fasilitas dan area standard</div>
+      <ul class="ticket-perks">
+        <li>Akses semua realm</li>
+        <li>Wahana standard</li>
+        <li>Area umum</li>
+      </ul>
+      <a href="#" class="btn-ticket">Beli Sekarang</a>
+    </div>
+
+    <!-- Premium (featured) -->
+    <div class="ticket-card featured">
+      <div class="ticket-badge">Paling Populer</div>
+      <div class="ticket-realm-icon">🌊</div>
+      <div class="ticket-type">Pandora Premium</div>
+      <div class="ticket-price">Rp 350.000</div>
+      <div class="ticket-note">Seluruh akses standard + fast track wahana</div>
+      <ul class="ticket-perks">
+        <li>Semua benefit Standard</li>
+        <li>Fast Track semua wahana</li>
+        <li>Priority boarding</li>
+      </ul>
+      <a href="#" class="btn-ticket btn-ticket-featured">Beli Sekarang</a>
+    </div>
+
+    <!-- VIP -->
+    <div class="ticket-card">
+      <div class="ticket-realm-icon">🔥</div>
+      <div class="ticket-type">Pandora VIP</div>
+      <div class="ticket-price">Rp 500.000</div>
+      <div class="ticket-note">Semua benefit Premium + VIP Lounge</div>
+      <ul class="ticket-perks">
+        <li>Semua benefit Premium</li>
+        <li>VIP Lounge eksklusif</li>
+        <li>VIP Restroom</li>
+      </ul>
+      <a href="#" class="btn-ticket">Beli Sekarang</a>
+    </div>
+  </div>
+
+  <div class="ticket-info reveal">
+    <div class="tinfo-item">📅 Jam Buka: <strong>10:00 - 20:00 WIB</strong> Setiap Hari</div>
+    <div class="tinfo-sep">|</div>
+    <div class="tinfo-item">📞 Reservasi: <strong>+62 812-3456-7890</strong></div>
+    <div class="tinfo-sep">|</div>
+    <div class="tinfo-item">✉️ <strong>info@naviorapark.com</strong></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="./img/logo.jpeg" alt="Logo"
+           style="width:50px;height:40px;object-fit:contain;border-radius:3px;margin-bottom:0.8rem;"/>
+      <div class="footer-logo">Naviora Park</div>
+      <div class="footer-tagline">Journey Through Pandora</div>
+      <p class="footer-about">Theme park imersif bertema planet Pandora dari film Avatar, berlokasi di Kulon Progo,
+      Daerah Istimewa Yogyakarta. Destinasi wisata tematik kelas dunia pertama di Indonesia.</p>
+    </div>
+    <div class="f-col">
+      <div class="f-col-title">Jelajahi</div>
+      <ul>
+        <li><a href="#realms">Forest Realm</a></li>
+        <li><a href="#realms">Ocean Realm</a></li>
+        <li><a href="#realms">Fire Ash Realm</a></li>
+        <li><a href="#realms">Wahana &amp; Atraksi</a></li>
+        <li><a href="#realms">Pertunjukan</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <div class="f-col-title">Rencanakan</div>
+      <ul>
+        <li><a href="#tiket">Beli Tiket</a></li>
+        <li><a href="#tiket">Paket Keluarga</a></li>
+        <li><a href="#fasilitas">Reservasi Makan</a></li>
+        <li><a href="#fasilitas">Naviora App</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <div class="f-col-title">Info</div>
+      <ul>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#">Karir</a></li>
+        <li><a href="#">Kontak</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#">Kebijakan</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Naviora Park. The World of Avatar Theme Park. Kulon Progo, Daerah Istimewa Yogyakarta.</div>
+    <div class="socials">
+      <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+      <a href="#" class="social-btn" aria-label="TikTok">TT</a>
+      <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+      <a href="#" class="social-btn" aria-label="Facebook">FB</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Script linked last for correct DOM order -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
